@@ -1,0 +1,193 @@
+/*
+Placeholder for custom user CSS
+
+mainly to be overridden in profile/static/custom/custom.css
+
+This will always be an empty file in IPython
+*/
+
+@import url('http://fonts.googleapis.com/css?family=Arimo|Montserrat|Open+Sans:300,400,700');
+@color-main: #0084B4;
+@color-light: #F0F5F7;
+@font-text: Open Sans;
+@font-title: Montserrat;
+@font-code: PragmataPro;
+
+@color-main-dark: #004c68;
+@color-turquoise: #00ced1;
+@color-orange-red: #ff4500;
+@color-salmon: #fa8072;
+@color-royal-blue: #4169e1;
+@color-emerald: #50c878;
+@color-teal: #008080;
+@color-grey: #708090;
+@color-lilac: #c8a2c8;
+@color-tsinghua: #800060;
+
+a {
+    color: @color-main;
+}
+
+.ansicyan {
+    color: @color-light;
+}
+
+.ansired {
+    color: @color-salmon;
+}
+
+.ansigreen {
+    color: @color-emerald;
+}
+
+.CodeMirror {
+    background-color: @color-light;
+}
+
+/* Change code font */
+.CodeMirror pre {
+    font-family: @font-code;
+    font-size: 12pt;
+    line-height: 140%;
+}
+
+.cm-s-ipython {
+    span.cm-def {
+        color: @color-royal-blue;
+        font-weight: 700;
+    };
+   
+    span.cm-string {
+        color: @color-tsinghua;
+    };
+
+    span.cm-keyword {
+        color: @color-turquoise;
+    };
+
+    span.cm-variable {
+        color: @color-main;
+    };
+
+    span.cm-number {
+        color: @color-orange-red;
+    };
+
+    span.cm-operator {
+        color: @color-teal;
+    };
+
+    span.cm-comment {
+        color: @color-grey;
+    };
+}
+
+div.cell.selected {
+    border-radius: 0;
+    border: thin @color-main solid;
+}
+
+div.input_area {
+    border-radius: 0;
+    border: thin @color-light solid;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+div.input_area:hover {
+    border-radius: 0;
+    border: thin #cee0e5 solid;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+div.output pre {
+    font-family: @font-code;
+    font-size: 12pt;
+    line-height: 140%;
+}
+
+div.output_scroll {
+    border-radius: 0;
+}
+
+div.output_text {
+    background-color: @color-main;
+}
+
+div.output_text pre {
+    color: #fff;
+}
+
+div.prompt{
+    font-family: @font-code;
+    font-size: 12pt;
+    border-radius: 0;
+}
+
+div.text_cell {
+    border-radius:0 ;
+}
+
+div.text_cell_render {
+    font-family: @font-text;
+    font-weight: 300;
+    font-size: 14pt;
+    line-height: 130%; /* added for some line spacing of text. */
+    color: @color-main-dark;
+}
+
+div.text_cell_render h1,
+div.text_cell_render h2,
+div.text_cell_render h3,
+div.text_cell_render h4,
+div.text_cell_render h5,
+div.text_cell_render h6 {
+    font-family: Montserrat, 'HelveticaNeue-Light';
+    font-weight: 300;
+}
+
+#menubar .navbar {
+    background: #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    border: none;
+    font-family: Montserrat;
+    font-weight: 400;
+    text-shadow: none;
+}
+
+.navbar-fixed-top .navbar-inner,
+.navbar-static-top .navbar-inner {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border: none;
+    background: @color-main;
+}
+
+#header {
+    font-family: Montserrat;
+}
+
+#header-container {
+    color: #fff;
+    background-color: @color-main;
+}
+
+.navbar .btn-group .btn {
+    border-radius: 0;
+    color: @color-main;
+    -webkit-transition: .2s;
+    transition: .2s;
+    border: none;
+}
+
+.navbar .btn-group .btn:hover {
+    color: #fff;
+    background: @color-main;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+
